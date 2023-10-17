@@ -374,4 +374,14 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+const uniqueMembers = [];
+
+bills.forEach(bill => {
+  if (bill.member && !uniqueMembers.includes(bill.member.name)) {
+    uniqueMembers.push(bill.member.name);
+  }
+});
+
+const totalMembers = uniqueMembers.length;
+
+console.log(`Unique Members Count: ${totalMembers}`);
