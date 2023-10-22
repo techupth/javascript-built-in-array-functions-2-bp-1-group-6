@@ -374,4 +374,17 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+const newBills = bills.filter(bills => bills.member !== null);
+//console.log(newBills);
+
+const billMembers = newBills.map(newBills => newBills.member.name);
+//console.log(billMembers);//['Mark','Mark','Peter','Bee','Mark','Jack','Patrick','John','John','Bee','Jack','T','Pop','Lisa', 'Alex','Bank','Mark','P','Mark','Bee','Mark']
+
+const member = [];
+billMembers.forEach(count => {
+  if(count.member && !member.includes(count.member.name))
+  member.push(count.member.name);
+})
+
+const totalMembers = member.length;
+console.log(`Unique Members Count: ${totalMembers}`);

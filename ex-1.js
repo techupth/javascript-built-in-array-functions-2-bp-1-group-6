@@ -374,3 +374,15 @@ const bills = [
 ];
 
 // Start coding here
+const totalArray = []
+for (let i=0; i<bills.length; i++){
+  totalArray.push(bills[i].total);
+}
+//console.log(totalArray); //array ราคาสินค้า
+
+function totalAmount(total,num){
+  return total + num;
+};
+
+let total = totalArray.reduce(totalAmount,0);
+console.log("Total bill transaction is " + total); //"Total bill transaction is 1410083"
