@@ -12,6 +12,7 @@ function updateCarCollection(carBrand) {
   }
 }
 
+
 //ผลลัพธ์ที่ควรได้จาก Example case
 //ในกรณีที่ยังไม่มียี่ห้อรถใน carCollection
 console.log(updateCarCollection("audi")); //new car collection is : toyota,fiat,honda,bmw,audi.

@@ -381,7 +381,5 @@ bills.forEach(bill => {
     uniqueMembers.push(bill.member.name);
   }
 });
-
 const totalMembers = uniqueMembers.length;
-
 console.log(`Unique Members Count: ${totalMembers}`);

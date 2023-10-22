@@ -383,5 +383,4 @@ const totalPaidByLocation = bills.reduce((result, bill) => {
     }
     return result;
 }, {});
-
 console.log(totalPaidByLocation);

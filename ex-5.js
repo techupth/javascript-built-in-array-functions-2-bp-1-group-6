@@ -13,5 +13,6 @@ function searchCrimeRecord(name) {
 //ในกรณีที่ไม่เคยมีประวัติเกี่ยวกับอาชญากรรม
 console.log(searchCrimeRecord("Dilan Sandra")); //"Dilan Sandra has no crime record"
 
+
 //ในกรณีที่เคยมีประวัติเกี่ยวกับอาชญากรรม
 console.log(searchCrimeRecord("Tinashe Benigno")); //"Tinashe Benigno has crime record !!!"

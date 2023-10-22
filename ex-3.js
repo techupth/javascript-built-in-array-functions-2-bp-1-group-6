@@ -374,11 +374,8 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers = [];
-for (let i = 0; i < bills.length; i++) {
-  if (bills[i].member !== null) {
-    billMembers.push(bills[i].member.name);
-  }
-}
+const newBills = bills.filter(bills => bills.member !== null);
+//console.log(newBills);
 
-console.log(billMembers);
+const billMembers = newBills.map(newBills => newBills.member.name);
+console.log(billMembers);//['Mark','Mark','Peter','Bee','Mark','Jack','Patrick','John','John','Bee','Jack','T','Pop','Lisa', 'Alex','Bank','Mark','P','Mark','Bee','Mark']
